@@ -1,2 +1,45 @@
-# Aston.Homework2_1
-crud operations with hibernate framework in console java program
+# Aston. Домашнее задание №2
+
+# Автор: Верета Александр Сергеевич
+
+Данный проект - учебный и является консольным Java-приложением для управления пользователями (CRUD), использующее "чистый" **Hibernate** для взаимодействия с **PostgreSQL**.
+Приложение реализует архитектуру **DAO**, поддерживает транзакции и логирование в файл.
+
+---
+
+## Установка и запуск
+
+### 1. Клонировать репозиторий
+
+```bash
+git clone https://github.com/0x3l4/Aston.Homework2_1.git
+cd Aston.Homework2_1
+```
+
+### 2. Настроить базу данных PostgreSQL
+
+Создайте базу данных:
+
+```sql
+CREATE DATABASE aston_db;
+```
+
+Необходимо в корне проекта создать файл .env и задать настройки для подключения по шаблону .env.example
+Также по своему усмотрению измените настройки в файле
+`src/main/resources/hibernate.cfg.xml`:
+
+---
+
+### 3. Собрать проект
+
+```bash
+mvn clean package
+```
+
+---
+
+### 4. Запустить приложение
+
+```bash
+java -jar target/Aston.Homework2_1-1.0.jar
+```
