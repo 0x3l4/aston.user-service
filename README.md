@@ -12,8 +12,8 @@
 ### 1. Клонировать репозиторий
 
 ```bash
-git clone https://github.com/0x3l4/Aston.Homework2_1.git
-cd Aston.Homework2_1
+git clone https://github.com/0x3l4/aston.user-service.git
+cd aston.user-service
 ```
 
 ### 2. Настроить базу данных PostgreSQL
@@ -41,5 +41,5 @@ mvn clean package
 ### 4. Запустить приложение
 
 ```bash
-java -jar target/Aston.Homework2_1-1.0.jar
+java -jar target/user-service-1.0.jar
 ```
