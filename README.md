@@ -16,21 +16,9 @@ git clone https://github.com/0x3l4/aston.user-service.git
 cd aston.user-service
 ```
 
-### 2. Настроить базу данных PostgreSQL
-
-Создайте базу данных:
-
-```sql
-CREATE DATABASE aston_db;
-```
-
-Необходимо в корне проекта создать файл .env и задать настройки для подключения по шаблону .env.example
-Также по своему усмотрению измените настройки в файле
-`src/main/resources/hibernate.cfg.xml`:
-
 ---
 
-### 3. Собрать проект
+### 2. Собрать проект
 
 ```bash
 mvn clean package
@@ -38,7 +26,7 @@ mvn clean package
 
 ---
 
-### 4. Запустить приложение
+### 3. Запустить приложение
 
 ```bash
 java -jar target/user-service-1.0.jar
